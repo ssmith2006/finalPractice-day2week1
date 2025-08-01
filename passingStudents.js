@@ -8,7 +8,7 @@ const students = [
 
 function getPassingStudentNames(students){
    const passing= students.filter(student => student.score >= 70);
-   const names = passing.map(student => student.name);
+   const names = passing.map(student => `Congrats to ${student.name} for passing with a score of ${student.score}`);
    return names;  
 }
 console.log(getPassingStudentNames(students));
